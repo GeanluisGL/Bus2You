@@ -61,14 +61,7 @@ namespace PresentationL
             dataGridView1.DataSource = objNegocio;
         }
 
-        private void EditBtn_Click(object sender, EventArgs e)
-        {
-            Edit = true;
-            objEntindad.ID_Ruta = (int)dataGridView1.CurrentRow.Cells[0].Value;
-            RutaBox.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            DistBox.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-        }
-
+      
         private void SearchBox_TextChanged(object sender, EventArgs e)
         {
             Buscar(SearchBox.Text);
@@ -143,5 +136,12 @@ namespace PresentationL
             }
         }
 
+        private void EditBtn_Click_1(object sender, EventArgs e)
+        {
+            Edit = true;
+            objEntindad.ID_Ruta = (int)dataGridView1.CurrentRow.Cells[0].Value;
+            RutaBox.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            DistBox.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+        }
     }
     } 

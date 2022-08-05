@@ -151,8 +151,8 @@ namespace PresentationL
                 PlacaBox.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 ModeloBox.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
                 MarcaBox.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                BirthDate.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                colorBox.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                colorBox.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                BirthDate.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             }
             else
             {

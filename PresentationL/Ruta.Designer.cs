@@ -143,6 +143,7 @@
             this.EditBtn.OnPressedColor = System.Drawing.Color.Black;
             this.EditBtn.Size = new System.Drawing.Size(38, 45);
             this.EditBtn.TabIndex = 1;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click_1);
             // 
             // dataGridView1
             // 

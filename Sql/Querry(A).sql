@@ -134,11 +134,11 @@ Select * From vwDatosBus
 -------------------------------------------------------- Store procedures ------------------------------------------------------------------------------------------------
 
 CREATE Proc regBus 
-@Nvarchar (20),
-@Nvarchar (30),
-@ Nvarchar (50),
-@Nvarchar (15),
-@varchar (15)
+@PLACA Nvarchar (20),
+@MARCA Nvarchar (30),
+@MODELO Nvarchar (50),
+@COLOR Nvarchar (15),
+@YIAR varchar (15)
 As
 insert into Bus values
 (@PLACA, @MARCA, @MODELO, @COLOR, @YIAR)
@@ -288,7 +288,7 @@ Drop Proc deletRuta
 CREATE TABLE VIAJE
 (
 Id INT identity (1,1) PRIMARY KEY, 
-ID_CHOFER INT UNIQUE NOT NULL,
+ID_CHOFER INT NOT NULL,
 ID_BUS NVARCHAR (20) NOT NULL,
 ID_RUTA INT  NOT NULL
 )

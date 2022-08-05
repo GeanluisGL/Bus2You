@@ -75,6 +75,7 @@ namespace PresentationL
                 catch (Exception ex)
                 {
                     MessageBox.Show("No se pudo editar el registro." + ex);
+                    limpiar();
                 }
             }
         }
@@ -128,9 +129,9 @@ namespace PresentationL
 
         public void limpiar()
         {
-           ChoferBox.SelectedIndex = 0;
-           BusBox.SelectedIndex = 0;
-           Rutabox.SelectedIndex = 0;
+           ChoferBox.SelectedIndex = -1;
+           BusBox.SelectedIndex = -1;
+           Rutabox.SelectedIndex = -1;
 
         }
 
